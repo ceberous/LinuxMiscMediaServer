@@ -7,7 +7,7 @@ process.on( "uncaughtException" , function( err ) {
     console.trace();
 });
 
-
+const port = process.env.PORT || 6970;
 const app = require( "./expressAPP.js" );
 const server = require( "http" ).createServer( app );
 
